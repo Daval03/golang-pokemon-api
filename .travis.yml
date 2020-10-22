@@ -1,9 +1,4 @@
-addons:
-  sonarcloud:
-    organization: "daval03"
-    token:
-      secure: "zmESz9hAoXSUUbqGEPkhZtM2PoByAoNbQ0AvzFINyCb/PEOc6UY8CUItmH1ZgUaqXtjSll3rnXluQNdWX0J8vvurF3hWMejt/S+8e2G7mYKWgUnGiqX8dkbtdDtcaioh+lm83I0cEr15vA6A+jtVWLj3eKvhpgwHW6CtX3BnIpHSX5LAxBKQaZN7D4ol0HS3u6ZOPh5iwGGyWKurhDAEpSu/5votTiTZsth/T3Uj/7NlF0EAJkkhOZG8vVVunVFtQHg6S6AsaSLV7y5ITx5FpUleQYE7GHwV3E7xxu1YFVbeTA3pjFQIQckwHiON47Ztc+4sj7YLmqweCecUPFtQ99Gv9V2dm/Q1iTJrv0gS1UBk8hYv68QQ4coeHgjhwKFe6wcqsjWV1eoOQy95a22O3mAuY/C3DXhXZOiEQCSSmqywiWqG6n4EiZep64nSGjZsniaoG6gC8LY6wK9pNPWfoJGsnrHlYxstQkW1wKspHXsvLN7VgYJLZZVNjYCdgaHapQYzpjaAcynCSSgvd0/QYemaioI6LoNlSzYCVkLZzG4lX3Yx01VizoID61YGyat0HOeaW91jMUknc/EV9p2qx6e+8bbM80KHHgbJvXAQBvYG2bADsZayqih1iR+7lVZnTEuGtcdf1nu0JHy8OsDSCkxbHrr5eA9yUYxlSpsdqug=" # encrypted value of your token
-
+language: go
 script:
-  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
-  - sonar-scanner
+- env GO111MODULE=on go build
+
