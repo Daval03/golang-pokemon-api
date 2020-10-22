@@ -11,3 +11,12 @@ var PokemonDb = []Pokemon{
 	Pokemon{ID: "2", Name: "Charmeleon", Type: "Fire"},
 	Pokemon{ID: "3", Name: "Arcanine", Type: "Fire"},
 }
+func PokemonDbAsValueArray() []Pokemon {
+	valueArray := make([]Pokemon, len(PokemonDb))
+	i := 0
+	for _, value := range PokemonDb {
+		valueArray[i] = value
+		i++
+	}
+	return valueArray
+}
