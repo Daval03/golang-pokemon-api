@@ -1,3 +1,7 @@
 language: go
 env:
-  GO111MODULE=on
+  GO111MODULE=on #no se toca
+deploy:
+  provider: heroku
+  api_key:
+    secure: "b2ac34ec-e2ba-4e8b-b12e-ebcfd920d58a"
